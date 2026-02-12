@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Birthday Mounica🎉</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  background: linear-gradient(135deg, #f247a8, #40eab4, #ff758c, #ffb199);
+  background-size: 400% 400%;
+  animation: bgMove 12s ease infinite;
+  color: white;
+  overflow-x: hidden;
+}
+
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Sections */
+section {
+  min-height: 100vh;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  font-family: Pacifico, cursive;
+  font-size: 3.8rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Glass Card */
+.card {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 35px;
+  border-radius: 25px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+/* Timeline */
+.timeline {
+  text-align: left;
+  max-width: 850px;
+  margin: auto;
+}
+
+.timeline div {
+  margin: 20px 0;
+  padding: 15px 20px;
+  border-left: 4px solid white;
+  background: rgba(255,255,255,0.12);
+  border-radius: 10px;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.gallery div {
+  background: rgba(255,255,255,0.2);
+  padding: 40px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+}
+
+/* Button */
+button {
+  margin-top: 25px;
+  padding: 14px 40px;
+  border-radius: 40px;
+  border: none;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* Surprise */
+.hidden {
+  display: none;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+/* Floating Hearts */
+.heart {
+  position: fixed;
+  font-size: 20px;
+  animation: floatUp 6s linear infinite;
+}
+
+@keyframes floatUp {
+  from { transform: translateY(100vh); opacity: 1; }
+  to { transform: translateY(-10vh); opacity: 0; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- SECTION 1: INTRO -->
+<section>
+  <h1>🎉 Happy Birthday Mow 🎉</h1>
+  <div class="subtitle">Welcome to a little universe made just for you ✨</div>
+
+  <div class="card">
+    <p style="font-size:1.2rem; line-height:1.8;">
+      Today isn’t just your birthday…  
+      <br>
+      It’s a celebration of your **kind heart**,  
+      your **beautiful smile**,  
+      and the happiness you bring into my life 💖  
+      <br><br>
+      Scroll down — your story awaits 🌈
+    </p>
+  </div>
+</section>
+
+<!-- SECTION 2: STORY -->
+<section>
+  <h1>📖 Our Story</h1>
+
+  <div class="timeline">
+    <div>🌸 The day you became part of my life — everything felt brighter.</div>
+    <div>😂 Our laughs, silly moments, and endless talks.</div>
+    <div>💪 Times you inspired me with your strength.</div>
+    <div>💖 Every memory that made us closer.</div>
+    <div>✨ And many more beautiful chapters yet to come.</div>
+  </div>
+</section>
+
+<!-- SECTION 3: LETTER -->
+<section>
+  <h1>💌 A Letter to YOU!</h1>
+
+  <div class="card">
+    Mow…  
+    <br><br>
+    You deserve all the love in the world! ✨
+    <br><br>
+    You are my hope, my comfort, and one of the most precious people in my life.  
+    Your happiness matters more to me than you will ever know.🥰 
+    <br><br>
+    You bring peace, happiness, and warmth into my life. Your laughter feels refreshing, your kindness feels comforting, and your presence makes everything brighter.🫂
+    <br>May your life be filled with love, success, peace, and endless smiles.🥹
+    <br> 
+    I promise to always support you, protect your happiness, and stand by your side 💫  
+  </div>
+</section>
+
+<!-- SECTION 4: GALLERY -->
+<section>
+  <h1>✨ A Collection of Love</h1>
+
+  <div class="gallery">
+    <div>💖 Our cutest moment</div>
+    <div>😂 Our funniest memory</div>
+    <div>🌸 Your brightest smile</div>
+    <div>✨ A special day together</div>
+    <div>🎉 A moment worth remembering</div>
+    <div>💫 More memories coming soon…</div>
+  </div>
+</section>
+
+<!-- SECTION 5: SURPRISE -->
+<section>
+  <h1>🎁 Final Surprise</h1>
+
+  <div class="card">
+    <p>Tap the button to unlock your final birthday message ✨</p>
+    <button onclick="reveal()">Unlock Message</button>
+
+    <div class="hidden" id="surprise">
+      💖 *"Mow, you are one of the most beautiful blessings in my life — today and always."* 
+      
+      <br><br>
+      Happiest Birthday, Dear♥️🎉  
+      <br>
+      Thank you for being the light of my life 🌸 
+      <br> 
+      I promise to always protect your smile 💕 
+    </div>
+  </div>
+</section>
+
+<script>
+// Floating Hearts
+setInterval(() => {
+  let h = document.createElement("div");
+  h.className = "heart";
+  h.innerHTML = ["💖","✨","🌸","💫","🎉"][Math.floor(Math.random()*5)];
+  h.style.left = Math.random() * 100 + "vw";
+  document.body.appendChild(h);
+  setTimeout(() => h.remove(), 6000);
+}, 200);
+
+// Surprise Reveal
+function reveal() {
+  document.getElementById("surprise").style.display = "block";
+}
+</script>
+
+</body>
+</html>
